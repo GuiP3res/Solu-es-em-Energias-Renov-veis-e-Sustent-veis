@@ -1,0 +1,58 @@
+Digite o número de motores: 
+4
+
+Motor 1:
+Digite a potência útil (Pu) em kW: 
+0.13
+Digite o rendimento (η): 
+0.50
+Digite o fator de potência (FP): 
+0.58
+
+Motor 2:
+Digite a potência útil (Pu) em kW: 
+75
+Digite o rendimento (η): 
+0.946
+Digite o fator de potência (FP): 
+0.85
+
+Motor 3:
+Digite a potência útil (Pu) em kW: 
+300
+Digite o rendimento (η): 
+0.958
+Digite o fator de potência (FP): 
+0.89
+
+Motor 4:
+Digite a potência útil (Pu) em kW: 
+11
+Digite o rendimento (η): 
+0.815
+Digite o fator de potência (FP): 
+0.75
+
+Motor 1:
+  Potência Ativa (Pa): 0.260 kW
+  Potência Aparente (S): 0.448 kVA
+  Potência Reativa (Pr): 0.365 kVAr
+
+Motor 2:
+  Potência Ativa (Pa): 79.281 kW
+  Potência Aparente (S): 93.272 kVA
+  Potência Reativa (Pr): 49.134 kVAr
+
+Motor 3:
+  Potência Ativa (Pa): 313.152 kW
+  Potência Aparente (S): 351.857 kVA
+  Potência Reativa (Pr): 160.433 kVAr
+
+Motor 4:
+  Potência Ativa (Pa): 13.497 kW
+  Potência Aparente (S): 17.996 kVA
+  Potência Reativa (Pr): 11.903 kVAr
+
+
+** Process exited - Return Code: 0 **
+Press Enter to exit terminal
