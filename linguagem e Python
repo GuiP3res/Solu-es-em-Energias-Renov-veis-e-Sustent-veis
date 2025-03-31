@@ -1,0 +1,34 @@
+import math
+
+def calcular_potencias(pu, eficiencia, fator_potencia):
+    """
+    Calcula as potências ativa, aparente e reativa de um motor.
+
+    Args:
+      pu: Potência útil do motor (em kW).
+      eficiencia: Rendimento do motor (em decimal, ex: 0.85).
+      fator_potencia: Fator de potência do motor (em decimal, ex: 0.92).
+
+    Returns:
+      Uma tupla contendo as potências ativa, aparente e reativa (em kW, kVA e kVAr, respectivamente).
+    """
+    pa = pu / eficiencia
+    s = pa / fator_potencia
+    pr = math.sqrt(s**2 - pa**2)
+    return pa, s, pr
+
+# Dados dos motores
+motores = [
+    {"pu": 0.13, "eficiencia": 0.50, "fator_potencia": 0.58},
+    {"pu": 75, "eficiencia": 0.946, "fator_potencia": 0.85},
+    {"pu": 300, "eficiencia": 0.958, "fator_potencia": 0.89},
+    {"pu": 11, "eficiencia": 0.815, "fator_potencia": 0.75},
+]
+
+# Calcular e exibir resultados
+for i, motor in enumerate(motores):
+    pa, s, pr = calcular_potencias(motor["pu"], motor["eficiencia"], motor["fator_potencia"])
+    print(f"\nMotor {i+1}:")
+    print(f"  Potência Ativa (Pa): {pa:.3f} kW")
+    print(f"  Potência Aparente (S): {s:.3f} kVA")
+    print(f"  Potência Reativa (Pr): {pr:.3f} kVAr")
